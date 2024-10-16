@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/qt,qtcreator,c++,git,visualstudiocode,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=qt,qtcreator,c++,git,visualstudiocode,linux
+# Created by https://www.toptal.com/developers/gitignore/api/qt,qtcreator,c++,visualstudiocode,linux,cmake
+# Edit at https://www.toptal.com/developers/gitignore?templates=qt,qtcreator,c++,visualstudiocode,linux,cmake
 
 ### C++ ###
 # Prerequisites
@@ -35,20 +35,22 @@
 *.out
 *.app
 
-### Git ###
-# Created by git for backups. To disable backups in Git:
-# $ git config --global mergetool.keepBackup false
-*.orig
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
 
-# Created by git when using merge tools for conflicts
-*.BACKUP.*
-*.BASE.*
-*.LOCAL.*
-*.REMOTE.*
-*_BACKUP_*.txt
-*_BASE_*.txt
-*_LOCAL_*.txt
-*_REMOTE_*.txt
+### CMake Patch ###
+# External projects
+*-prefix/
 
 ### Linux ###
 *~
@@ -87,6 +89,7 @@ ui_*.h
 *.qmlc
 *.jsc
 Makefile*
+[Bb]uild/
 *build-*
 *.qm
 *.prl
@@ -105,7 +108,6 @@ target_wrapper.*
 CMakeLists.txt.user*
 
 # QtCreator 4.8< compilation database
-compile_commands.json
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
@@ -163,4 +165,4 @@ compile_commands.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/qt,qtcreator,c++,git,visualstudiocode,linux
+# End of https://www.toptal.com/developers/gitignore/api/qt,qtcreator,c++,visualstudiocode,linux,cmake
